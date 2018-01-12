@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2015-2017 F5 Networks, Inc.
+   
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+   
+        http://www.apache.org/licenses/LICENSE-2.0
+   
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+ -->
+
+<feature
+      id="com.f5.irule.feature"
+      label="F5 Programmability for Eclipse"
+      version="2.0.0.qualifier"
+      provider-name="F5 Networks">
+
+   <description url="http://devcentral.f5.com/irules">
+      F5 Programmability Development Environment for Eclipse
+   </description>
+
+   <copyright url="http://devcentral.f5.com/irules">
+      ©F5 Networks, Inc. 
+   </copyright>
+
+   <license url="http://devcentral.f5.com/irules">
+F5 Networks END USER LICENSE AGREEMENT 
+2016-03-21 
+DOC-0395-02 
+IMPORTANT - READ BEFORE INSTALLING OR OPERATING THIS PRODUCT 
+***************************************************************** 
+
+LICENSEE AGREES TO BE BOUND BY THE TERMS OF THIS END USER LICENSE 
+AGREEMENT (“LICENSE”) BY INSTALLING, HAVING INSTALLED, COPYING, OR 
+OTHERWISE USING THE PRODUCT. IF LICENSEE DOES NOT AGREE, DO NOT INSTALL 
+OR USE THE PRODUCT.  
+
+
+1. Scope.  This License applies to the software product ("Software") 
+you have licensed from F5. This License is a legal agreement between F5 
+and the single entity ("Licensee") that has acquired the Software from 
+F5 under these terms and conditions. All references to “F5” in this 
+License will be deemed to be a reference to the applicable F5 entity as 
+follows: (i) if Licensee’s primary place of business is located in the 
+European Economic Area, the Middle East or Africa (“EMEA”), the F5 
+entity is F5 Networks Ltd.; (ii) if Licensee’s primary place of 
+business is located in the Asia-Pacific region, excluding Japan, India 
+and Taiwan (“APAC”), the F5 entity is F5 Networks Singapore Pte. Ltd.; 
+and (iii) if Licensee’s primary place of business is located in Japan, 
+India, Taiwan or a region outside of EMEA or APAC, the F5 entity is F5 
+Networks, Inc.  The Software incorporates certain third party software 
+programs subject to the terms and restrictions of the applicable 
+licenses identified herein.  
+
+2. License Grant.  Subject to the terms of this License, F5 grants to 
+Licensee a perpetual, non-exclusive, non-transferable license to use 
+the Software in object code form for Licensee's internal business 
+purposes.  Other than as specifically described herein, no right or 
+license is granted to any of F5's trademarks, patents, copyrights, or 
+other intellectual property rights and F5 retains all rights not 
+granted herein.  The Software incorporates certain third party 
+software, which is used subject to licenses from the respective 
+owners.  The third party software is identified in the Software 
+documentation available at http://askf5.com. The protections given to 
+F5 under this License also apply to the suppliers of this third party 
+software.  
+
+3. Restrictions. 
+
+
+(a) The Software, Software documentation and the associated copyrights 
+and other intellectual property rights are owned by F5 or its licensors 
+and are protected by law and international treaties.  Licensee may not 
+copy or translate the Software documentation provided with the Software 
+or available online at http://askf5.com ("Documentation") without F5's 
+prior, written consent.  Licensee may install, use, access, display and 
+run the Software only in the manner in which it has been licensed as 
+indicated herein and in the applicable purchase order, quote or the 
+license file for such Product or Software, including but not limited to 
+any restrictions on number of protected applications, number or type of 
+licensed devices, number of authorized copies or instances, number of 
+users, bandwidth, non-production use, database or location 
+restrictions.  Licensee agrees that it will not defeat, circumvent or 
+disable any copy protection mechanism or mechanism in the Software used 
+to limit license duration or access to non-licensed functionality or 
+capacity, and that any such attempt will be a material breach of this 
+Agreement.  F5 reserves the right to audit Licensee's use of the 
+Software or authorize others to conduct such an audit on its behalf and 
+to disable any application or functionality that has not been 
+specifically licensed, in addition to any other rights and remedies 
+available to F5. 
+
+(b) Certain portions of the Software include third party software modules 
+as identified in the applicable Software documentation.  
+
+(c) Licensee may not copy (except to make one archival copy for backup 
+and disaster recover purposes), modify, sell, sub-license, rent or 
+transfer the Software or any associated Software documentation to any 
+third party.  Licensee may not disassemble, reverse compile or reverse 
+engineer the Software or encourage others to do so except as required 
+by law for interoperability purposes, and then only after Licensee has 
+given F5 an opportunity to provide information or software necessary to 
+resolve such interoperability issues. 
+
+4. Export Control.  To the extent applicable, Licensee agrees to comply 
+with the Export Administration Act, the Export Control Act, all 
+regulations promulgated under such Acts, and all other US government 
+regulations relating to the export of technical data and equipment and 
+products produced therefrom which are applicable to Licensee.  In 
+countries other than the US, Licensee agrees to comply with the local 
+regulations regarding importing, exporting or using cryptographic software 
+if applicable. Licensee agrees it will not export or re-export the 
+Software to any country, person, or entity subject to U.S. export 
+restrictions. Specifically, Licensee agrees not to export or re-export the 
+Software: (i) to any country to which the U.S. has embargoed or restricted 
+the export of goods or services, or to any national of any such country, 
+wherever located, who intends to transmit or transport the Software back 
+to such country; (ii) to any person or entity who Licensee knows or has 
+reason to know will utilize the Software or portion thereof in the design, 
+development or production of nuclear, chemical or biological weapons; or  
+(iii) to any person or entity who has been prohibited from participating 
+in U.S. export transactions by any federal agency of the U.S. government, 
+including but not limited to anyone on the U.S. Treasury Department's list 
+of Specially Designated Nationals or the U.S. Department of Commerce's 
+Table of Denial Orders. By installing or using the Software, Licensee 
+represents and warrants that it is not located in, under control of, or a 
+national or resident of any such country or on any such list.  
+
+5. Notice to U.S. Government End Users.  The Software and Documentation 
+qualify as "commercial items," as that term is defined at Federal 
+Acquisition Regulation ("FAR") (48 C.F.R.) 2.101, consisting of 
+"commercial computer software" and "commercial computer software 
+documentation" as such terms are used in FAR 12.212. Consistent with 
+FAR 12.212 and DoD FAR Supp. 227.7202-1 through 227.7202-4, and 
+notwithstanding any other FAR or other contractual clause to the 
+contrary in any agreement into which this End User License Agreement 
+may be incorporated, Licensee may provide to Government end user or, if 
+this Agreement is direct, Government end user will acquire, the 
+Software and Software documentation with only those rights set forth in 
+this End User License Agreement. Use of either the Software or Software 
+documentation or both constitutes agreement by the Government that the 
+Software and Documentation are "commercial computer software" and 
+"commercial computer software documentation" and constitutes acceptance 
+of the rights and restrictions herein.  
+
+6. DISCLAIMER; LIMITATION OF REMEDY.  F5 AND ITS THIRD PARTY LICENSORS 
+DISCLAIM ANY AND ALL WARRANTIES AND GUARANTEES, EXPRESS, IMPLIED OR 
+OTHERWISE, ARISING, WITH RESPECT TO THE SOFTWARE, DATA, SPECIFICATIONS, 
+OR DOCUMENTATION DELIVERED HEREUNDER, INCLUDING BUT NOT LIMITED TO THE 
+WARRANTY OF MERCHANTABILITY, WARRANTY OF NON-INFRINGEMENT OR TITLE AND 
+THE WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE.  F5 MAKES NO WARRANTY 
+CONCERNING THE COMPLETENESS OR ACCURACY OF THE DATA OR INFORMATION 
+OBTAINED OR DERIVED THROUGH THE USE OF THE DATA INCLUDED IN THE 
+SOFTWARE AND THE DATA IS PROVIDED "AS IS". IN NO EVENT DOES F5 WARRANT 
+THAT THE SOFTWARE IS ERROR FREE, THAT IT WILL OPERATE WITH ANY SOFTWARE 
+OR HARDWARE OTHER THAN THAT PROVIDED BY F5 OR SPECIFIED IN THE 
+DOCUMENTATION, OR THAT THE SOFTWARE WILL SATISFY LICENSEE'S OWN 
+SPECIFIC REQUIREMENTS. F5 HAS NOT AUTHORIZED ANYONE TO MAKE ANY 
+REPRESENTATIONS OR WARRANTIES OTHER THAN AS PROVIDED ABOVE OR TO 
+OTHERWISE MODIFY THE TERMS OF THIS LICENSE.  THE COLLECTIVE LIABILITY 
+OF F5 AND ITS THIRD PARTY LICENSORS UNDER THIS LICENSE WILL BE LIMITED 
+TO THE AMOUNT PAID FOR THE PRODUCT.  F5 AND ITS THIRD PARTY LICENSORS 
+WILL NOT HAVE ANY OBLIGATION OR LIABILITY, WHETHER ARISING IN CONTRACT 
+(INCLUDING WARRANTY), TORT (INCLUDING ACTIVE, PASSIVE OR IMPUTED 
+NEGLIGENCE, STRICT LIABILITY OR PRODUCT LIABILITY) OR OTHERWISE FOR ANY 
+PUNITIVE, EXEMPLARY, SPECIAL, INCIDENTAL, CONSEQUENTIAL OR INDIRECT 
+DAMAGES,INCLUDING BUT NOT LIMITED TO LOSS OF USE, LOSS OF DATA, 
+BUSINESS INTERRUPTION, LOSS OF REVENUE, LOSS OF BUSINESS OR OTHER 
+FINANCIAL LOSS ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE OR 
+OTHER GOODS OR SERVICES FURNISHED TO LICENSEE BY F5, EVEN IF ADVISED OF 
+THE POSSIBILITY OF SUCH DAMAGES. TO THE EXTENT PERMITTED BY LAW, F5'S 
+THIRD PARTY LICENSORS WILL NOT HAVE ANY LIABILITY FOR ANY DIRECT 
+DAMAGES OF ANY KIND UNDER THIS LICENSE AGREEMENT.  THE LIMITATIONS 
+CONTAINED IN THIS SECTION WILL APPLY NOTWITHSTANDING ANY FAILURE OF AN 
+ESSENTIAL PURPOSE OF ANY LIMITED REMEDY PROVIDED UNDER ANY TERM OF THIS 
+AGREEMENT.  SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OR EXCLUSION 
+OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES. IN THOSE 
+JURISDICTIONS, SUCH INAPPLICABILITY WILL NOT AFFECT THE REMAINDER OF 
+THE PROVISIONS IN THIS SECTION.  
+
+
+7. Termination.  The license granted in Section 2 is effective until 
+terminated and will automatically terminate if Licensee fails to comply 
+with any of the terms and conditions set forth herein.  Upon termination, 
+Licensee will destroy the Software and Software documentation and all 
+copies or portions thereof.  
+
+8. Support.  Maintenance and support of the Software is not provided 
+under this License.  
+
+9. Miscellaneous.  This License will be governed and construed in 
+accordance with the following governing law (“Governing Law”), 
+depending on the applicable licensing F5 entity, without regard to its 
+choice of law rules:  
+
+Location: F5 Networks Singapore Pte. Ltd. 
+Governing Law: The laws of Singapore 
+Venue: Singapore 
+
+Location: F5 Networks Ltd. 
+Governing Law: The laws of England and Wales 
+Venue: London England 
+
+Location: F5 Networks, Inc. 
+Governing Law: The laws of the State of Washington 
+Venue: Seattle, Washington  
+
+The provisions of the U.N. Convention for the International Sale of Goods 
+and the Uniform Computer Information Transactions Act, in whatever form 
+adopted, will not apply and the parties specifically opt out of the 
+application of such laws.  In the event of any dispute arising out of 
+or relating to this Agreement, the parties shall seek to settle the 
+dispute via direct discussions.  If a dispute cannot be settled through 
+direct discussions, the parties agree to first endeavor to settle the 
+dispute via voluntary non-binding mediation, before resorting to 
+arbitration.  A mediator will be selected by voluntary agreement of 
+both parties, or in the event both parties cannot agree on a mediator, 
+a mediator will be selected in accordance with the rules of JAMS.  The 
+mediation shall be held in the applicable venue (“Venue”) identified in 
+the chart above.  Each party shall bear its own costs and expenses and 
+an equal share of the administrative and other fees associated with the 
+mediation.  Any dispute that remains unresolved following mediation 
+shall be settled by arbitration administered by the JAMS in accordance 
+with its Comprehensive Arbitration Rules.  The place of arbitration 
+shall be the applicable Venue.  Judgment upon the award rendered by the 
+arbitrator(s) may be entered in any court having jurisdiction thereof.  
+The arbitrator(s) shall award to the prevailing party, if any, as 
+determined by the arbitrator(s), all of its costs and fees.  "Costs and 
+fees" mean all reasonable pre-award expenses of the arbitration, 
+including the arbitrators' fees, administrative fees, travel expenses, 
+out-of-pocket expenses such as copying and telephone, court costs, 
+witness fees, and attorneys' fees.  In rendering the award, the 
+arbitrator(s) shall determine the rights and obligations of the parties 
+according to the substantive and procedural laws of the applicable 
+Governing Law.  The foregoing alternative dispute resolution provisions 
+will not apply to claims or actions related to the infringement, 
+misappropriation or violation of F5’s intellectual property rights or 
+those of its third party licensors and such actions may be brought in 
+any court of competent jurisdiction.  Any provisions found to be 
+unenforceable will not affect the enforceability of the other 
+provisions contained herein, but will instead be replaced with a 
+provision as similar in meaning to the original as possible.  This 
+License constitutes the entire agreement between the parties with 
+regard to its subject matter.  No modification will be binding unless 
+in writing and signed by the parties.  
+
+10. Acknowledgements.  The Software includes software developed by 
+third parties subject to separate licenses.  Please refer to the 
+Acknowledgement section found in the Software documentation available 
+at http://askf5.com.  
+
+11. Open Source Components. Certain portions of the Software ("Open 
+Source Components") are licensed under the terms of applicable open 
+source licenses, such as the BSD license, Apache license, the Lesser 
+GNU General Public License, the GNU General Public License or any other 
+such license.  Information identifying the Open Source Components, and 
+the licenses that apply to them, is available in the Software 
+documentation available at http://askf5.com.  Your use of each Open 
+Source Component is subject to the terms of each applicable license.  
+Any other software code that is not part of the Open Source Components 
+is subject to the restrictions set forth elsewhere in this License.  
+Furthermore, those portions of the Software that are part of the Open 
+Source Components are subject to the remaining terms and conditions of 
+the License to the extent that those terms are not inconsistent with 
+the terms of the applicable licenses of the Open Source Components.  
+   </license>
+
+   <plugin
+         id="com.f5.irule.model"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.f5.irule.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.f5.irule.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

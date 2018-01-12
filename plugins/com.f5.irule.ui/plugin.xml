@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+    Copyright 2015-2017 F5 Networks, Inc.
+   
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+   
+        http://www.apache.org/licenses/LICENSE-2.0
+   
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+ -->
+
+<plugin>
+
+   <!-- Explorer -->
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="F5"
+            id="com.f5">
+      </category>
+      <view
+            name="Connections"
+            icon="images/f5-16.png"
+            category="com.f5"
+            class="com.f5.irule.ui.views.IruleView"
+            id="com.f5.irule.ui.views.IruleView">
+      </view>
+   </extension>
+
+   <!-- Project Properties Pages -->
+   <extension point="org.eclipse.ui.propertyPages">
+    <page
+      name="F5 Connection Properties"
+      class="com.f5.irule.ui.preferences.ConnectionPropertiesPage"
+      id="com.f5.irule.ui.preferences.ConnectionPropertiesPage">
+      <enabledWhen>
+        <adapt type="org.eclipse.core.resources.IProject">
+          <test property="org.eclipse.core.resources.projectNature" value="org.eclipse.dltk.tcl.core.nature"/>
+        </adapt>
+      </enabledWhen>
+    </page>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.ProblemView"
+               relationship="right"
+               id="org.eclipse.dltk.ui.ScriptExplorer">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+   <extension point="org.eclipse.ui.perspectives">
+      <perspective
+	  name="F5"
+	  icon="images/f5-16.png"
+          class="com.f5.irule.ui.perspective.IrulePerspective"
+          id="com.f5.irule.ui.perspective.IrulePerspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+         <category name="BIG-IP Connections"
+           id="com.f5.irule.ui.wizards.category"/>
+         <wizard name="New Connection"
+           class="com.f5.irule.ui.wizards.NewConnectionWizard"
+           category="com.f5.irule.ui.wizards.category"
+           icon="images/f5-16.png"
+           id="com.f5.irule.ui.wizards.NewConnectionWizard"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.editors"> 
+      <editor
+      	name="Data Group Editor"
+      	class="com.f5.irule.ui.editor.datagroup.DataGroupEditor"
+      	id="com.f5.irule.ui.editor.datagroup.DataGroupEditor"
+      	matchingStrategy="com.f5.irule.ui.editor.datagroup.DataGroupEditorMatchingStrategy"
+      	icon="images/f5-16.png">
+      </editor> 
+   </extension>
+   
+</plugin>
